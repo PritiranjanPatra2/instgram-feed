@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #con{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 15vw;
+            gap: .5rem;
+
+
+
+        }
+     #con img{
+        width: 303px;
+        height: 444px;
+         } 
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 18px 111px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.logo {
+    height: 30px;
+}
+
+.search {
+    margin-left: auto;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+main {
+    max-width: 935px;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.username-edit {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-size: 28px;
+    margin: 0;
+}
+
+.edit-profile {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.settings-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    margin: 10px 0;
+}
+
+.stats span {
+    margin-right: 20px;
+}
+
+.bio p {
+    margin: 5px 0;
+}
+
+.highlights {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.highlight-item {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.highlight-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+}
+
+.highlight-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Instagram Logo" class="logo">
+        <input type="text" placeholder="Search" class="search">
+    </header>
+    <main>
+        <section class="profile-header">
+            <div class="profile-picture">
+                <img src="./img/my.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <div class="username-edit">
+                    <h1 class="username">Pritiranjan</h1>
+                    <button class="edit-profile">Edit Profile</button>
+                    <img src="./img/my.jpg" alt="Settings" class="settings-icon">
+                </div>
+                <div class="stats">
+                    <span><strong>680</strong> posts</span>
+                    <span><strong>6,483</strong> followers</span>
+                    <span><strong>263</strong> following</span>
+                </div>
+                <div class="bio">
+                    <p>Pritiranjan Patra</p>
+                    <p>🍰 18 mar 2002</p>
+                    <p>👨‍💻 MERN STACK DEVELOPER</p>
+                    <p>🚀 1.3k followers on LinkedIn</p>
+                    <p>🎥 My LinkedIn <a href="https://www.linkedin.com/in/pritiranjan-patra-771a91287/">https://www.linkedin.com/in/pritiranjan-patra</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="highlights">
+            <div class="highlight-item">
+                <img src="./img/IMG (1).jpg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/IMG (2).jpg" alt="Highlights">
+                <span>Html</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/IMG (3).jpg" alt="Highlights">
+                <span>CSS</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/IMG (4).jpg" alt="ReactJS Series">
+                <span>Core Java</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/my.jpg" alt="On My Vacation">
+                <span>MYSQL</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/pexels-pixabay-280411.jpg" alt="Movies">
+                <span>Movies</span>
+            </div>
+            <div class="highlight-item">
+                <img src="./img/pexels-thefstopper-1075189.jpg" alt="2020">
+                <span>2024</span>
+            </div>
+        </section>
+    </main>
+
+    <div id="con"></div>
+    <script src="index.js"></script>
+</body>
+</html>
